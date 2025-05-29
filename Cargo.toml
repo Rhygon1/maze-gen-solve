@@ -1,0 +1,13 @@
+[package]
+name = "main_rust"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+image = "0.25.6"
+priority-queue = "2.4.0"
+
+[profile.release]
+codegen-units = 1
+lto = "fat"
+panic = "abort"
